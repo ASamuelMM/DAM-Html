@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html">
+    <meta charset="utf-8"/>
+    <title>Formulario</title>
+  </head>
+  <body>
+    <!-- Method => post o get.
+    Post para mandar la informacion en el cuerpo del mensaje. Codificado y
+    cifrado por el protocolo HTTP. Se envia al back, lo recibe un archivo
+    (PHP por ejemplo).
+    Get para mandar la informacion en la cabecera del mensaje == en la URL==
+    lo puede leer todo el mundo. No es apto para contaseñas.
+    Action => Tenemos que indicar que archivo lo recibe-->
+    <form method="get" action="procesamiento.php">
+      <!-- DATOS USUARIO -->
+      <p>
+        <label for="idUsuario">
+          Usuario:
+        </label>
+        <input type="text" name="usuario" id="idUsuario" placeholder="Usuario">
+        <br>
+        <label for="idContrasena">
+          Contraseña:
+        </label>
+        <input type="password" name="contrasena" id="idContrasena" placeholder="Contraseña"><br>
+        <label for="idFechaNac">
+          Fecha de Nacimiento:
+        </label>
+        <input type="date" name="fechaNac" id="idFechaNac">
+      </P>
+
+      <p>
+        Elige tu género: <br>
+        <input type="radio" name="genero" value="hombre" id="idHombre">
+        <label for="idHombre">Hombre</label><br>
+        <input type="radio" name="genero" value="mujer" id="idMujer">
+        <label for="idMujer">Mujer</label><br>
+        <input type="radio" name="genero" value="noBinario" id="idNoBinario">
+        <label for="idNoBinario">No Binario</label><br>
+      </p>
+
+      <p>
+        <!--CHECKED -> Permite seleccionar por defecto una opcion-->
+        Comida favorita:<br/>
+        <input type="checkbox" name="comida[]" value="CarneS" id="idCarneS">
+        <label for="idCarneS">Lasaña</label></br>
+
+        <input type="checkbox" name="comida[]" value="lasana" id="idLasana">
+        <label for="idLasana">Carne en salsa</label></br>
+
+        <input type="checkbox" name="comida[]" value="macarrones" id="idMacarrones">
+        <label for="idMacarrones">Macarrones con tomate</label></br>
+
+        <input type="checkbox" name="comida[]" value="croquetas" id="idCroquetas">
+        <label for="idCroquetas">Croquetas</label></br>
+
+        <input type="checkbox" name="comida[]" value="solomillo" id="idSolomillo">
+        <label for="idSolomillo">Solomillo salsa Roquefort</label></br>
+
+        <input type="checkbox" name="comida[]" value="migas" id="idMigas">
+        <label for="idMigas">Migas con melón</label></br>
+      </p>
+
+      <!--LISTA DESPLEGABLE-->
+      <p>
+        <label for="idComidaFavSelect">Comida Favorita</label></br>
+        <select name="ComidaFavSelect" id="idComidaFavSelect">
+          <option value="Migas">Migas</option>
+          <option value="Pizza">Pizza</option>
+      </p>
+
+      <p>
+        <label for="idComidaFavLista">Comida Favorita</label></br>
+        <input list="ComidaFavLista" name="nameComidaFavLista"/>
+        <datalist id="ComidaFavLista">
+          <option value="Migas"></option>
+          <option value="Pizza"></option>
+        </datalist>
+      </p>
+
+      <!-- Boton -->
+      <p>
+        <input type="submit" value="Click aqui"></input>
+      </p>
+  </body>
+</html>
+
+<!-- -->
