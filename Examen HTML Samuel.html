@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html">
+    <meta charset="utf-8">
+    <title>Examen HTML Samuel</title>
+  </head>
+  <body>
+    <h2>Simulacro de Examen: A. Samuel Molina Morales</h2>
+    <form method="get" action="procesamiento.php" target="_blank">
+    <p>
+      <fieldset><legend>Datos Personales</legend>
+        <label for="idNombre">
+          Nombre:
+        </label>
+        <input type="text" name="nombre" id="idNombre" placeholder="Nombre"><br>
+
+        <label for="idNickUsuario">
+          Nick de Usuario:
+        </label>
+        <input type="text" name="nick" id="idNickUsuario" placeholder="Nick Usuario"><br>
+
+        <label for="idEdad">
+          Edad:
+        </label>
+        <input type="number" name="edad" id="idEdad" placeholder="Edad"><br>
+
+        <label for="idTelefono">
+          Telefono:
+        </label>
+        <input type="tel" name="telefono" id="idTelefono" placeholder="Telefono"><br>
+
+        Carnet:<br>
+        <input type="checkbox" name="carnet[]" value="CarnetA" id="idCarnetA">
+        <label for="idCarnetA">A</label><br>
+
+        <input type="checkbox" name="carnet[]" value="CarnetB" id="idCarnetB">
+        <label for="idCarnetB">B</label><br>
+
+        <input type="checkbox" name="carnet[]" value="CarnetC" id="idCarnetC">
+        <label for="idCarnetC">C</label><br>
+
+      </fieldset>
+    </p>
+
+    <p>
+      <fieldset><legend>Datos del Vehiculo</legend>
+        Tipo de coche: <br>
+        <input type="radio" name="coche" value="turismo" id="idTurismo">
+        <label for="idTurismo">Turismo</label><br>
+        <input type="radio" name="coche" value="deportivo" id="idDeportivo">
+        <label for="idDeportivo">Deportivo</label><br>
+        <input type="radio" name="coche" value="suv" id="idSuv">
+        <label for="idSuv">Suv</label><br>
+        <input type="radio" name="coche" value="todoterreno" id="idTodoterreno">
+        <label for="idTodoterreno">Todoterreno</label><br>
+
+        <!-- MARCA DEL COCHE -->
+        <br><label for="idMarcaCoche">Marca del Coche</label><br>
+        <select name="marcaCoche" id="idMarcaCoche">
+          <option value="Audi">Audi</option>
+          <option value="Volkswagen">Volkswagen</option>
+          <option value="Tesla">Tesla</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Ferrari">Ferrari</option>
+          <option value="Seat">Seat</option>
+          <option value="BMW">BMW</option>
+          <option value="Porsche">Porsche</option>
+
+          <!-- Modelo de Coche -->
+          <br><label for="idModeloCoche">Modelo de Coche</label><br>
+          <input list="modeloCoche" name="modeloDelCoche"/>
+          <datalist id="idModeloCoche">
+            <option value="Mi Coche">Mi coche</option>
+            <option value="Tu coche">Tu coche</option>
+          </datalist>
+      </fieldset>
+    </p>
+
+    <!-- Boton de enviar -->
+    <p>
+      <input type="submit" value="Enviar"></input>
+    </p>
+
+
+
+  </body>
+</html>
