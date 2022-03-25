@@ -13,22 +13,25 @@
     Get para mandar la informacion en la cabecera del mensaje == en la URL==
     lo puede leer todo el mundo. No es apto para contaseñas.
     Action => Tenemos que indicar que archivo lo recibe-->
-    <form method="get" action="procesamiento.php">
+    <form method="get" action="procesamiento.php" target="_blank" autocomplete novalidate>
+      <!-- target = "_self" Abre el archivo en la misma ventana -->
       <!-- DATOS USUARIO -->
       <p>
-        <label for="idUsuario">
-          Usuario:
-        </label>
-        <input type="text" name="usuario" id="idUsuario" placeholder="Usuario">
-        <br>
-        <label for="idContrasena">
-          Contraseña:
-        </label>
-        <input type="password" name="contrasena" id="idContrasena" placeholder="Contraseña"><br>
-        <label for="idFechaNac">
-          Fecha de Nacimiento:
-        </label>
-        <input type="date" name="fechaNac" id="idFechaNac">
+        <fieldset><legend>Datos Personales</legend>
+          <label for="idUsuario">
+            Usuario:
+          </label>
+          <input type="text" name="usuario" id="idUsuario" placeholder="Usuario">
+          <br>
+          <label for="idContrasena">
+            Contraseña:
+          </label>
+          <input type="password" name="contrasena" id="idContrasena" placeholder="Contraseña"><br>
+          <label for="idFechaNac">
+            Fecha de Nacimiento:
+          </label>
+          <input type="date" name="fechaNac" id="idFechaNac">
+        </fieldset>
       </P>
 
       <p>
@@ -79,6 +82,29 @@
           <option value="Pizza"></option>
         </datalist>
       </p>
+
+      <!-- <p>
+        <label for="idTexto">Añadir comentario: </label></br>
+        <textarea name="texto" id="idTexto" rows="10" cols="20"></textarea> -->
+        <!-- Lo normal es no poner filas ni columnas y ajustarlo con CSS -->
+      <!-- </p> -->
+
+      <!-- LISTA DE INPUTS -->
+      Input boton: <input type="button"><br>
+      Input checkbox: <input type="checkbox"><br>
+      Input color: <input type="color"><br>
+      Input Fecha: <input type="date"><br>
+      Input tiempo: <input type="datetime"><br>
+      Input email: <input type="email"><br>
+      Input archivo: <input type="file"><br>
+      Input consulta: <input type="image"><br>
+      Input mes: <input type="month"><br>
+      Input numero: <input type="number"><br>
+      Input reset: <input type="reset"><br>
+      Input busqueda: <input type="search"><br>
+      Input telefono: <input type="tel"><br>
+      Input tiempo: <input type="time"><br>
+      Input url: <input type="url"><br>
 
       <!-- Boton -->
       <p>
