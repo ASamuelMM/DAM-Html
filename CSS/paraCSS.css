@@ -1,0 +1,33 @@
+body{
+  font-family: monospace;
+  /*background-color: rgba(0,200,255,0.5);*/
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/homer-meme-1547553537.gif?crop=1.00xw:0.680xh;0,0.0618xh&resize=640:*);
+  /*opacity: 0.5;*/
+  color: blue;
+  text-align: center;
+}
+
+h1{
+  background-color: dodgerblue;
+  color: blue;
+  border-style: dotted solid groove hidden;
+}
+
+p{
+  background-color: slateblue;
+  color: orange;
+  border: 5px groove violet;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.par{
+  font-style: italic;
+  font-weight: bold;
+}
+
+p.par{
+  text-align: right;
+  border: 5px dotted violet;
+  color: yellow;
+}
