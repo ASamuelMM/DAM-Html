@@ -1,0 +1,50 @@
+body{
+  color: darkblue;
+  width: 75%;
+  margin: auto;
+}
+
+.cabecera{
+  text-align: center;
+  font-family: fantasy;
+  padding: 10px;
+  background-color: #00C8FF;
+}
+
+.menu{
+  text-align: left;
+  font-family: fantasy;
+
+  border-color: #0A0087;
+  border-radius: 5%;
+  background-color: #00C8FF;
+}
+
+.menu ul{
+  border-style: solid;
+  padding: 5px;
+  list-style: none;
+  display: flex;
+}
+
+.menu a{
+  padding: 5px;
+  margin: 50px;
+  text-decoration: none;
+
+}
+/*
+header{
+  text-align: center;
+  font-family: fantasy;
+  padding: 10px;
+  background-color: #00C8FF;
+}
+
+footer{
+  text-align: center;
+  font-family: fantasy;
+  padding: 10px;
+  background-color: #00C8FF;
+}
+*/
