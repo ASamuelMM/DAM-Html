@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Estilo de la cabecera */
+.cabecera {
+  padding: 30px;
+  text-align: center;
+  background-image: url(fondo_cabecera.jpg);
+
+}
+
+#logo{
+  width: 300px;
+  height: 110px;
+}
+
+/* Estilo del menu de navegacion */
+.menu {
+  margin-top: 5px;
+  overflow: hidden;
+  background-color: #CC0000;
+}
+
+/* Estilo de los enlaces del menu */
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+  border-right: solid 2px #f1f1f1;
+}
+
+/* Cambia el color cuando pasa el cursor */
+.menu a:hover {
+  background-color: #A80000;
+  color: #E5E5E5;
+}
+
+/* Caja del cuerpo de la pagina */
+.seccion {
+  float: left;
+  width: 100%;
+}
+
+/* Caja para las fotos de los anuncios */
+.anuncio {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.anuncio img{
+  width: 100%;
+  height: 400px;
+}
+
+.anuncio a{
+  margin: auto;
+}
+
+/* Estilo de los productos del catalogo */
+.producto{
+  border: 1px solid #F1F1F1;
+  width: 210px;
+  display: inline-grid;
+  margin-bottom: 10px;
+}
+
+.producto:hover{
+  border: 1px solid black;
+}
+
+.producto img{
+  width: 200px;
+  height: auto;
+}
+
+.descripcion{
+  padding-left: 5px;
+}
+
+/* Color de la descripcion de los productos */
+.redbull{
+  color: white;
+  background-color: #000750;
+}
+
+.ferrari{
+  color: black;
+  background-color: #CC0000;
+}
+
+.alfaRomeo{
+  color: white;
+  background-color: #7A0000;
+}
+
+.alphaTauri{
+  color: white;
+  background-color: #1B2335;
+}
+
+.mercedes{
+  color: black;
+  background-color: #00EFB0;
+}
+
+.alpine{
+  color: white;
+  background-color: #14369F;
+}
+
+.mclaren{
+  color: black;
+  background-color: #FF8000;
+}
+
+.aston{
+  color: white;
+  background-color: #005A50;
+}
+
+/* Estilo de los articulos de la seccion */
+.articulo {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Pie de pagina */
+.pie {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: black;
+  margin-top: 20px;
+  float: left;
+}
+
+.pie span{
+  color: #999999;
+  margin-right: 20px;
+}
+
+.pie p{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.pie a{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
