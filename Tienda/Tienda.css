@@ -33,18 +33,38 @@ body{
   text-decoration: none;
 
 }
-/*
-header{
-  text-align: center;
-  font-family: fantasy;
-  padding: 10px;
-  background-color: #00C8FF;
+
+#contenedor{
+  border-style: solid;
+  border-color: darkblue;
+  width: 100%;
 }
 
-footer{
+.articulo{
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  border-style: solid;
+  border-color: darkblue;
+
+  max-width: 310px;
+  max-height: 180px;
+
+  float: left;
+}
+
+.img{
+  width: 280px;
+  height: 120px;
+}
+
+#pie{
+  width: 100%;
+
   text-align: center;
   font-family: fantasy;
   padding: 10px;
   background-color: #00C8FF;
+
+  float: left;
 }
-*/
